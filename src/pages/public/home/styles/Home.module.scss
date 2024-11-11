@@ -1,0 +1,22 @@
+@use "src/shared/scss/logic/function";
+
+.homeContainer {
+	padding-block: function.vw(30, 1920);
+	color: var(--black);
+
+	@media (max-width: 1440px) {
+		padding-block: function.vw(30, 1440);
+	}
+	@media (max-width: 960px) {
+		padding-block: function.vw(30, 960);
+	}
+	@media (max-width: 720px) {
+		padding-block: function.vw(30, 720);
+	}
+	@media (max-width: 540px) {
+		padding-block: function.vw(30, 540);
+	}
+	@media (max-width: 420px) {
+		padding-block: function.vw(30, 420);
+	}
+}

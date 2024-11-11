@@ -1,0 +1,32 @@
+@use "/src/shared/scss/logic/function";
+
+.header {
+	padding-block: function.vw(21, 1920);
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 1440px) {
+		height: function.vw(110, 1440);
+		padding-block: function.vw(21, 1440);
+	}
+	@media (max-width: 960px) {
+		flex-direction: column;
+		height: function.vw(160, 960);
+		padding-block: function.vw(21, 960);
+	}
+	@media (max-width: 720px) {
+		flex-direction: column;
+		height: function.vw(160, 720);
+		padding-block: function.vw(21, 720);
+	}
+	@media (max-width: 540px) {
+		flex-direction: column;
+		height: function.vw(160, 540);
+		padding-block: function.vw(21, 540);
+	}
+	@media (max-width: 420px) {
+		flex-direction: column;
+		height: function.vw(160, 420);
+		padding-block: function.vw(21, 420);
+	}
+}

@@ -1,0 +1,144 @@
+@use "@src/shared/scss/logic/function";
+
+.h1{
+  font-size: function.vw(27, 1920);
+  font-weight: 700;
+
+  &_white {
+    @extend .h1;
+    color: var(--white);
+  }
+
+  @media (max-width: 1440px) {
+    font-size: function.vw(27, 1440);
+  }
+
+  @media (max-width: 960px) {
+    font-size: function.vw(27, 960);
+  }
+
+  @media (max-width: 720px) {
+    font-size: function.vw(27, 720);
+  }
+
+  @media (max-width: 540px) {
+    font-size: function.vw(27, 720);
+  }
+
+  @media (max-width: 420px) {
+    font-size: function.vw(27, 420);
+  }
+}
+
+.h2{
+  font-size: function.vw(21, 1920);
+  font-weight: 700;
+
+  &__normal{
+    @extend .h2;
+    font-weight: 400;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: function.vw(21, 1440);
+  }
+
+  @media (max-width: 960px) {
+    font-size: function.vw(21, 960);
+  }
+
+  @media (max-width: 720px) {
+    font-size: function.vw(21, 720);
+  }
+
+  @media (max-width: 540px) {
+    font-size: function.vw(21, 720);
+  }
+
+  @media (max-width: 420px) {
+    font-size: function.vw(21, 420);
+  }
+}
+
+.h3 {
+  font-size: function.vw(18, 1920);
+  font-weight: 600;
+
+  @media (max-width: 1440px) {
+    font-size: function.vw(18, 1440);
+  }
+
+  @media (max-width: 960px) {
+    font-size: function.vw(18, 960);
+  }
+
+  @media (max-width: 720px) {
+    font-size: function.vw(18, 720);
+  }
+
+  @media (max-width: 540px) {
+    font-size: function.vw(18, 720);
+  }
+
+  @media (max-width: 420px) {
+    font-size: function.vw(18, 420);
+  }
+}
+
+.paragraph{
+  font-size: function.vw(16, 1920);
+
+  &_white {
+    @extend .paragraph;
+    color: var(--white);
+  }
+
+  @media (max-width: 1440px) {
+    font-size: function.vw(16, 1440);
+  }
+
+  @media (max-width: 960px) {
+    font-size: function.vw(16, 960);
+  }
+
+  @media (max-width: 720px) {
+    font-size: function.vw(16, 720);
+  }
+
+  @media (max-width: 540px) {
+    font-size: function.vw(16, 540);
+  }
+
+  @media (max-width: 420px) {
+    font-size: function.vw(16, 420);
+  }
+}
+
+.span{
+  font-size: function.vw(14, 1920);
+
+  &_white {
+    @extend .span;
+    color: var(--white);
+  }
+
+  @media (max-width: 1440px) {
+    font-size: function.vw(14, 1440);
+  }
+
+  @media (max-width: 960px) {
+    font-size: function.vw(14, 960);
+  }
+
+  @media (max-width: 720px) {
+    font-size: function.vw(14, 720);
+  }
+
+  @media (max-width: 540px) {
+    font-size: function.vw(14, 540);
+  }
+
+  @media (max-width: 420px) {
+    font-size: function.vw(14, 420);
+  }
+}

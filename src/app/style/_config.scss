@@ -1,0 +1,47 @@
+@use "@src/shared/scss/logic/function";
+
+:root{
+  --white: #fff;
+  --blue: #009ee0;
+  --black: #626262;
+  --yello: #ffe04b;
+  --orange: #f99f47;
+}
+
+*::-webkit-scrollbar {
+  width: function.vw(12, 1920) !important;
+  background: transparent !important;
+
+  @media (max-width: 960px) {
+    width: function.vw(10, 960) !important;
+  }
+}
+
+*::-webkit-scrollbar-thumb:hover{
+  background-color: var(--black-t75) !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: var(--black-t50) !important;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px !important;
+  background: transparent !important;
+}
+
+
+@mixin font($fontName, $fontStyle, $fontWeight, $furl) {
+  @font-face {
+    font-family: $fontName;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    src: local($fontName), url($furl) format('truetype');
+  }
+}
+
+@include font('Roboto', normal, 300, "@src/shared/assets/fonts/Roboto-Light.ttf");
+@include font('Roboto', normal, 400, "@src/shared/assets/fonts/Roboto-Regular.ttf");
+@include font('Roboto', normal, 500, "@src/shared/assets/fonts/Roboto-Medium.ttf");
+@include font('Roboto', normal, 700, "@src/shared/assets/fonts/Roboto-Bold.ttf");

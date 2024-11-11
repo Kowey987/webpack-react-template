@@ -1,0 +1,28 @@
+@use "src/shared/scss/logic/function";
+
+.footerContainer {
+	display: flex;
+	flex-direction: column;
+	padding-block: function.vw(30, 1920);
+	border-top: 4px solid #ebf0f1;
+
+	@media (max-width: 1440px) {
+		padding-block: function.vw(30, 1440);
+	}
+	@media (max-width: 960px) {
+		padding-block: function.vw(30, 960);
+		margin-bottom: function.vw(40, 960);
+	}
+	@media (max-width: 720px) {
+		padding-block: function.vw(30, 720);
+		margin-bottom: function.vw(50, 720);
+	}
+	@media (max-width: 540px) {
+		padding-block: function.vw(30, 540);
+		margin-bottom: function.vw(50, 540);
+	}
+	@media (max-width: 420px) {
+		padding-block: function.vw(30, 420);
+		margin-bottom: function.vw(50, 420);
+	}
+}
