@@ -1,5 +1,5 @@
-@import "style/reset";
-@import "style/config";
+@use "/src/app/style/reset";
+@use "/src/app/style/config";
 
 body {
 	font-family: "Roboto", sans-serif;
