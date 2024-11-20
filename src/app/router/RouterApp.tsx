@@ -1,7 +1,7 @@
 import {RoutesLayout} from "@src/app/router/paths";
 import {Route, Routes} from "react-router-dom";
 import {FC} from "react";
-import {Layout} from "@src/features/layout";
+import {Layout} from "@src/shared/components/layout";
 
 export const RouterApp: FC = () => {
   return (
