@@ -3,9 +3,10 @@ import HTMLWebpackPlugins from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {CleanWebpackPlugin} from "clean-webpack-plugin";
 import DotenvWebpackPlugin from "dotenv-webpack";
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import path from "path";
 
-export const buildPlugin = (paths: string):Array<webpack.ProgressPlugin> => {
+export const buildPlugin = (paths: string, isDev: boolean):Array<webpack.ProgressPlugin> => {
     return [
         new HTMLWebpackPlugins({
             template: paths,
@@ -21,5 +22,6 @@ export const buildPlugin = (paths: string):Array<webpack.ProgressPlugin> => {
             path: path.resolve(path.join(path.resolve(), ".env")),
             systemvars: true
         }),
-    ]
+        isDev && new ReactRefreshWebpackPlugin()
+    ].filter(Boolean)
 }
