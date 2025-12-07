@@ -16,7 +16,7 @@ export const buildLoader = (options: BuildOptions): Array<webpack.RuleSetRule> =
           }],
           "@babel/preset-typescript",
           ["@babel/preset-react", {
-            runtime: options.isDev ? "automatic" : "classic"
+            runtime: "automatic"
           }],
         ],
         plugins: [
